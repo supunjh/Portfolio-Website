@@ -1,0 +1,213 @@
+.contact {
+  position: relative;
+}
+
+.contactHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contact Info */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfoTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.contactInfoText {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactCard {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.contactCardIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactCard:nth-child(1) .contactCardIcon {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-blue);
+}
+
+.contactCard:nth-child(2) .contactCardIcon {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-purple);
+}
+
+.contactCard:nth-child(3) .contactCardIcon {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--accent-cyan);
+}
+
+.contactCard:nth-child(4) .contactCardIcon {
+  background: rgba(236, 72, 153, 0.1);
+  color: var(--accent-pink);
+}
+
+.contactCardLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.contactCardValue {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Contact Form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  position: relative;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: var(--text-muted);
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.05);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.formTextarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formLabel {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  background: var(--bg-primary);
+  padding: 0 6px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.formInput:focus + .formLabel,
+.formTextarea:focus + .formLabel,
+.formInput:not(:placeholder-shown) + .formLabel,
+.formTextarea:not(:placeholder-shown) + .formLabel {
+  opacity: 1;
+}
+
+.submitBtn {
+  padding: 16px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.submitBtn:hover::before {
+  left: 100%;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+.successMessage {
+  padding: 16px 20px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-sm);
+  color: #22c55e;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeInUp 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
