@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Hero.module.css";
-import { Code2, Database, Cloud, Layers, ArrowDown } from "lucide-react";
+import { Code2, Database, Cloud, Layers, ArrowDown, Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -43,6 +43,14 @@ export default function Hero() {
               Get in Touch
               <ArrowDown size={18} />
             </button>
+            <a
+              href="/Supun_Jayasuriya_CV.pdf"
+              download
+              className={styles.ctaDownload}
+            >
+              <Download size={18} />
+              Download CV
+            </a>
             <button
               className={styles.ctaSecondary}
               onClick={() =>

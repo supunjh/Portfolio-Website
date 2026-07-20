@@ -30,7 +30,7 @@ export default function Footer() {
             <Linkedin size={18} />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/supunjh"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}

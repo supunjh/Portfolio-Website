@@ -9,6 +9,7 @@ const educations = [
     degree: "BSc (Hons) in Computer Science and Software Engineering",
     institution: "University of Bedfordshire",
     period: "2021 – 2022",
+    grade: "Second Class, Upper Division",
     icon: <GraduationCap size={26} />,
     iconClass: "uni",
   },
@@ -16,13 +17,15 @@ const educations = [
     degree: "Higher National Diploma in Information Technology",
     institution: "Sri Lankan Institute of Information Technology (SLIIT)",
     period: "2019 – 2021",
+    grade: null,
     icon: <Award size={26} />,
     iconClass: "diploma",
   },
   {
-    degree: "G.C.E. Advanced Level — Mathematics Stream",
-    institution: "Dharmaraja College",
+    degree: "G.C.E. Advanced Level — Physical Science Stream",
+    institution: "Dharmaraja College, Kandy",
     period: "2019 – 2021",
+    grade: null,
     icon: <BookOpen size={26} />,
     iconClass: "school",
   },
@@ -57,6 +60,9 @@ export default function Education() {
                 </div>
                 <h3 className={styles.eduDegree}>{edu.degree}</h3>
                 <p className={styles.eduInstitution}>{edu.institution}</p>
+                {edu.grade && (
+                  <p className={styles.eduGrade}>{edu.grade}</p>
+                )}
                 <span className={styles.eduPeriod}>{edu.period}</span>
               </div>
             </ScrollReveal>

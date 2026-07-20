@@ -9,30 +9,29 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "hSenid Software Lanka",
-    period: "2025 – Present",
+    period: "Feb 2025 – Present",
     badge: "senior",
     details: [
-      "Architected and deployed a highly scalable, serverless USSD-based mobile classified advertisements platform utilizing AWS Cloud Services (API Gateway, Lambda) to ensure high availability and structural fault tolerance.",
-      "Engineered an automated WhatsApp-based consultation platform using Java, Spring Boot, and MongoDB; integrated the WhatsApp Cloud API, Redis caching, and payment gateway services to streamline client interactions and transaction handling.",
-      "Designed and delivered an end-to-end Impact Area Management System using React and Firebase, improving cross-team workflows and operational tracking accuracy.",
+      "Integrated Healthcare Management System Development — Contributed as a Frontend Developer for an integrated healthcare management system supporting general users and enterprise employees. Designed and implemented intuitive, user-centric interfaces for mobile health tracking (steps, weight, calories burned, body temperature, health condition reporting), enterprise web-based HR health management, and online medical consultation modules. Worked on frontend CI/CD pipelines and automation for reliable deployments.",
+      "USSD-Based Mobile Classified Ads Deployment — Architected and deployed a highly scalable, serverless USSD-based mobile classified advertisements platform utilizing AWS Cloud Services (API Gateway, Lambda) to ensure high availability and structural fault tolerance.",
+      "WhatsApp-Based Consultation Platform Development — Engineered an automated WhatsApp-based consultation platform using Java, Spring Boot, and MongoDB; integrated the WhatsApp Cloud API, Redis caching, and payment gateway services to streamline client interactions and transaction handling.",
     ],
   },
   {
     title: "Associate Software Engineer",
     company: "hSenid Software Lanka",
-    period: "2023 – 2025",
+    period: "Nov 2023 – Jan 2025",
     badge: "associate",
     details: [
-      "Developed scalable, enterprise-grade microservice-based HR modules leveraging Angular, Spring Boot, and GraphQL to process data loads efficiently.",
-      "Optimized frontend Angular applications for client deployments, yielding enhanced client-side loading speeds and standardizing architectural best practices.",
-      "Co-authored and delivered the Safety Confirmation Feature for the Software Research Association (SRA) project, collaborating directly with Japanese clients to align feature logic with client specifications.",
+      "Disaster Safety Confirmation and Emergency Notification System — Developed a system to support real-time communication and safety monitoring during emergency and disaster situations. Designed and implemented responsive, user-friendly interfaces, integrated real-time notification flows, and contributed to CI/CD pipelines for reliable deployments.",
+      "Impact Area Manager System — Designed and delivered an end-to-end Impact Area Management System using React and Firebase, improving cross-team workflows and operational tracking accuracy.",
       "Conducted technical intern training sessions on corporate code standards, framework paradigms, and version control workflows, noticeably accelerating onboarding timelines.",
     ],
   },
   {
     title: "Trainee Software Engineer",
     company: "hSenid Software Lanka",
-    period: "2023 Aug – 2023 Nov",
+    period: "Aug 2023 – Nov 2023",
     badge: "trainee",
     details: [
       "Constructed interactive, responsive frontend dashboards and robust backend APIs for the SRA Safety Confirmation Application.",
@@ -42,7 +41,7 @@ const experiences = [
   {
     title: "Intern Software Engineer",
     company: "hSenid Software Lanka",
-    period: "2023 Jan – 2023 Aug",
+    period: "Jan 2023 – Aug 2023",
     badge: "intern",
     details: [
       "Contributed to UI component development and seamless backend API integration pipelines across modules of the PHT medical application.",
